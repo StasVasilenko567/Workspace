@@ -1,0 +1,184 @@
+{
+  "main": {
+    "id": "7a03cab8066d372f",
+    "type": "split",
+    "children": [
+      {
+        "id": "efad58ba8db0a557",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "01b5c01cc338fb5f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Работа/NGRX.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "NGRX"
+            }
+          },
+          {
+            "id": "be4b47ac60b837ae",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c4fb209bdedb4dda",
+    "type": "split",
+    "children": [
+      {
+        "id": "45eaeaf3fd045194",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dd17ea40e1edf954",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "93e5896a1326ccb3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "a641bb9ae525cb1d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3d054822342d8ef3",
+    "type": "split",
+    "children": [
+      {
+        "id": "eca291acec592177",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4d60e7f4c28f5a63",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Разное/Заметки.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Заметки"
+            }
+          },
+          {
+            "id": "7bc392e46e95d860",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Разное/Заметки.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Заметки"
+            }
+          },
+          {
+            "id": "3b679805c011b3f2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "c184d9374a5755e2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Разное/Заметки.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Заметки"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "01b5c01cc338fb5f",
+  "lastOpenFiles": [
+    "Работа/NGRX.md",
+    "Разное/Заметки.md",
+    "Работа/RXJS.md",
+    "Работа",
+    "Welcome.md",
+    "Разное"
+  ]
+}
