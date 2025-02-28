@@ -4,7 +4,7 @@
 
 Потоки (observables) - Замена промисов. Реализовано через паттерн Наблюдатель. Имеет такой функционал:
 1. Подписка через subscribe. При создании подписки, мы передаем колбек, который будет исполняться, когда в поток передадут данные. Пример:
-```
+```ts
 this.options?.changes.subscribe(
 	(c) => { c.toArray().forEach((item: ElementRef) => {
 		if (index === this.getIndexById(this.firstSelected)) {

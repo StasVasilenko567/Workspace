@@ -1,7 +1,7 @@
 Для начала, нужно выучить SOLID. Основной используемый принципе - Single Responsibility.
 
 Сначала мы создаем API сервис вроде такого:
-``` userapi.service.ts
+``` js
 import { HttpClient } from "@angular/common/http";
 import { inject, Injectable } from "@angular/core";
 import { Observable } from "rxjs";
@@ -58,7 +58,7 @@ store/
 Для начала, стоит определить список действий (Action/Экшен). Как правило, экшены - это объекты, состоящие из типа (type) и сообщения (payload). Экшен, словно, контракт сигнализирует о работе с состояниями (вроде обычного CRUD).
 
 Создать экшены (группу экшенов), можно как на примере:
-```user.actions.ts
+```js
 import { User } from "app/pages/users-page/models/user.model";
 import { emptyProps, props } from "@ngrx/store";
 import { createActionGroup } from "@ngrx/store";
@@ -91,7 +91,7 @@ export const userActions = createActionGroup({
 Редьюсеры - это объекты, которые возвращают нужные объекты, в обмен на экшены. Идея проста: Отправляешь экшен и, в зависимости от экшена, получаешь объект из редьюсера. Редьюсеры так же могут описать ситуацию, когда данные не пришли.
 
 Пример редьюсера:
-```user.reducers.ts
+```ts
 import { User } from "app/pages/users-page/models/user.model";
 import { createFeature, createReducer, on } from "@ngrx/store";
 import { userActions } from "./user.actions";
@@ -224,7 +224,7 @@ export const userFeature = createFeature({
 Помимо редьюсера, нам необходимо создать фичу (feature) и ключ доступа. Далее, в конфигах приложения прописать провайдер нашей фичи (об этом позже).
 
 Для чтения данных, нужно использовать селекторы. Они возвращают нужные нам данные. Пример селектора:
-```user.selectors.ts
+```ts
 import { createFeatureSelector, createSelector } from "@ngrx/store";
 
 import { userFeatureKey, UserState } from "./user.reducers";
@@ -251,7 +251,7 @@ export const userSelectors = {
 ```
 
 Также не стоит забывать о важном: как именно будут загружаться данные в стор? Для такого можно использовать эффекты (или SideEffects). По сути, эффект при отправлении экшена будет параллельно загружать данные в стор из API сервиса. Пример эффекта ниже:
-```
+```ts
 import { Injectable, inject } from "@angular/core";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { catchError, map, mergeMap, switchMap } from "rxjs/operators";
@@ -305,7 +305,7 @@ export class UserEffects {
 Да, мы создаем потоки (каналы/observables). В нем мы привязываем экшен к эффекту через (ofType и switchMap).
 
 Все, теперь остается работа с непосредственно компонентом. Примеры работы ниже:
-```user-list.component.ts
+```ts
 import { Component, inject, OnInit, OnDestroy } from '@angular/core';
 import { AsyncPipe, NgFor } from '@angular/common';
 import { UserCardComponent } from 'app/pages/users-page/components/user-card/user-card.component';
@@ -343,7 +343,7 @@ export class UserListComponent implements OnInit, OnDestroy {
 }
 ```
 
-```user-list.template.ts
+```html
 <div>
 	<app-user-card *ngFor="let user of users$ | async" [user]="user" />
 </div>
